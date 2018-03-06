@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ccminer", "ccminer.vcxproj", "{36DC07F9-A4A6-4877-A146-1B960083CF6F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1} = {A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}
+		{818D40DF-DAA8-4209-2B85-B4322EC87525} = {818D40DF-DAA8-4209-2B85-B4322EC87525}
+		{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79} = {ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}
+		{B286D4FB-76D5-C357-4775-13FF295983D1} = {B286D4FB-76D5-C357-4775-13FF295983D1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "compat\curl-for-windows\zlib.vcxproj", "{818D40DF-DAA8-4209-2B85-B4322EC87525}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl", "compat\curl-for-windows\openssl.vcxproj", "{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcurl", "compat\curl-for-windows\libcurl.vcxproj", "{B286D4FB-76D5-C357-4775-13FF295983D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthread", "pthread.vcxproj", "{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36DC07F9-A4A6-4877-A146-1B960083CF6F}.Debug|x64.ActiveCfg = Debug|x64
+		{36DC07F9-A4A6-4877-A146-1B960083CF6F}.Debug|x64.Build.0 = Debug|x64
+		{36DC07F9-A4A6-4877-A146-1B960083CF6F}.Release|x64.ActiveCfg = Release|x64
+		{36DC07F9-A4A6-4877-A146-1B960083CF6F}.Release|x64.Build.0 = Release|x64
+		{818D40DF-DAA8-4209-2B85-B4322EC87525}.Debug|x64.ActiveCfg = Debug|x64
+		{818D40DF-DAA8-4209-2B85-B4322EC87525}.Debug|x64.Build.0 = Debug|x64
+		{818D40DF-DAA8-4209-2B85-B4322EC87525}.Release|x64.ActiveCfg = Release|x64
+		{818D40DF-DAA8-4209-2B85-B4322EC87525}.Release|x64.Build.0 = Release|x64
+		{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}.Debug|x64.ActiveCfg = Debug|x64
+		{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}.Debug|x64.Build.0 = Debug|x64
+		{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}.Release|x64.ActiveCfg = Release|x64
+		{ED11D5F3-A171-D94D-D5CB-B4FE94EA8C79}.Release|x64.Build.0 = Release|x64
+		{B286D4FB-76D5-C357-4775-13FF295983D1}.Debug|x64.ActiveCfg = Debug|x64
+		{B286D4FB-76D5-C357-4775-13FF295983D1}.Debug|x64.Build.0 = Debug|x64
+		{B286D4FB-76D5-C357-4775-13FF295983D1}.Release|x64.ActiveCfg = Release|x64
+		{B286D4FB-76D5-C357-4775-13FF295983D1}.Release|x64.Build.0 = Release|x64
+		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Debug|x64.ActiveCfg = Debug|x64
+		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Debug|x64.Build.0 = Debug|x64
+		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Release|x64.ActiveCfg = Release|x64
+		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {965D26D6-8051-4914-A906-56946AC33D4A}
+	EndGlobalSection
+EndGlobal
