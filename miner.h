@@ -654,6 +654,8 @@ void bench_display_results();
 struct stratum_job {
 	char *job_id;
 	unsigned char prevhash[32];
+	unsigned char utxroot[32];	//html qtum
+	unsigned char stateroot[32]; //html qtum
 	size_t coinbase_size;
 	unsigned char *coinbase;
 	unsigned char *xnonce2;

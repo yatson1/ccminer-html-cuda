@@ -1662,7 +1662,19 @@ static bool stratum_gen_work(struct stratum_ctx *sctx, struct work *work)
 		memcpy(&work->data[12], sctx->job.coinbase, 32); // merkle_root
 		work->data[20] = 0x80000000;
 		if (opt_debug) applog_hex(work->data, 80);
-	} else {
+	} else if (opt_algo == ALGO_HTML) { //html header
+		for (i = 0; i < 8; i++)
+			work->data[9 + i] = be32dec((uint32_t *)merkle_root + i);
+		work->data[17] = le32dec(sctx->job.ntime);
+		work->data[18] = le32dec(sctx->job.nbits);
+		for (i = 0; i < 8; i++)
+			work->data[27 - i] = le32dec((uint32_t *)sctx->job.stateroot + i);
+		for (i = 0; i < 8; i++)
+			work->data[35 - i] = le32dec((uint32_t *)sctx->job.utxroot + i);
+		work->data[44] = 0xffffffff;
+		if (opt_debug) applog_hex(work->data, 181);
+	}
+	else {
 		for (i = 0; i < 8; i++)
 			work->data[9 + i] = be32dec((uint32_t *)merkle_root + i);
 		work->data[17] = le32dec(sctx->job.ntime);
